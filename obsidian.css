@@ -1,0 +1,110 @@
+:root {
+    --base00:    #660033;
+    --base0:     #A35E7C;
+    --base1:     #A35E7C;
+    --base2:     #fff7f5;
+    --base3:     #fff7f5;
+    --yellow:    #b58900;
+    --orange:    #cb4b16;
+    --red:       #dc322f;
+    --magenta:   #d33682;
+    --accent:    #660033;
+    --pink:      #ffd7e2;
+    --title:      #A35E7C;
+    --green:     #859900;
+}
+
+.theme-light {
+    --background-primary: var(--base3);
+    --background-primary-alt: var(--base2);
+    --background-secondary: var(--base3);
+    --background-secondary-alt: var(--base2);
+    --text-normal: var(--base00);
+    --text-faint: var(--base1);
+    --text-muted: var(--base0);
+    --text-error: var(--pink);
+    --text-accent: var(--accent);
+    --text-title: var(--title);
+    --text-code: var(--magenta);
+    --text-highlight-fg: var(--pink);
+    --text-highlight-bg: var(--base2);
+    --pre-code: var(--base0);
+    --background-modifier-border: var(--base1);
+    --background-modifier-form-field: var(--base2);
+    --interactive-normal: var(--base3);
+    --interactive-accent: var(--pink);
+    --interactive-accent-hover: var(--title);
+    --interactive-accent-rgb: var(--pink);
+    --text-on-accent: var(--base3);
+    --vim-cursor: var(--pink);
+    --text-border: var(--accent);
+    --text-selection: var(--pink);
+}
+
+.cm-header {
+    color: var(--text-title);
+}
+
+h1, h2, h3, h4, h5, h6, .markdown-preview-view h6{
+    color: var(--text-title);
+}
+
+.cm-formatting-image.cm-link {
+    color: var(--text-faint) !important;
+}
+
+.CodeMirror span.cm-inline-code,
+.CodeMirror span.cm-math,
+pre > code:not(.prism) {
+    color: var(--text-code);
+}
+
+.CodeMirror span.cm-formatting-math {
+    color: var(--text-highlight-fg);
+}
+
+pre.HyperMD-codeblock {
+    color: var(--text-normal) !important;
+}
+
+.cm-highlight, mark {
+    background: var(--text-highlight-bg) !important;
+    color: var(--text-highlight-fg) !important;
+}
+
+blockquote, .markdown-embed {
+    border-color: var(--text-border) !important;
+}
+
+.search-result-file-matched-text {
+    color: var(--text-highlight-fg);
+}
+
+.suggestion-item.is-selected {
+    background-color: var(--background-secondary-alt);
+}
+
+/* Tags */
+.cm-s-obsidian span.cm-hashtag-begin,
+.cm-s-obsidian span.cm-hashtag-end,
+a.tag {
+    background-color: var(--text-normal);
+    color: var(--background-primary);
+    padding: 5px;
+    text-decoration: none;
+}
+
+a.tag {
+    border-radius: 10px;
+}
+
+.cm-s-obsidian span.cm-hashtag-begin {
+    border-radius: 10px 0px 0px 10px;
+    font-family: inherit;
+    padding-right: 0px;
+}
+
+.cm-s-obsidian span.cm-hashtag-end {
+    border-radius: 0px 10px 10px 0px;
+    padding-left: 0px;
+}
